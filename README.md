@@ -9,6 +9,6 @@ Collection of the widgets i test
 
  c. run the project `flutter run`, `flutter run -d android` or `flutter run -d edge` or debug.
 
-![Model](https://github.com/Phant0m-a/sandbox/blob/main/lib/appbar.png)
+![Model](https://github.com/Phant0m-a/Sandbox/blob/main/lib/appbar3.PNG)
 
 
