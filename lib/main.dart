@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:sandbox/pages/home_page.dart';
 
@@ -13,8 +15,11 @@ class Sandbox extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
-      theme: ThemeData(useMaterial3: true,appBarTheme: AppBarTheme(backgroundColor: Colors.grey)),
-      
+      theme: ThemeData(
+          bottomNavigationBarTheme: BottomNavigationBarThemeData(
+              selectedIconTheme: IconThemeData(color: Colors.orange)),
+          useMaterial3: true,
+          appBarTheme: AppBarTheme(backgroundColor: Colors.orange[200])),
     );
   }
 }
