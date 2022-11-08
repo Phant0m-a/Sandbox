@@ -31,16 +31,16 @@ class _HomePageState extends State<HomePage> {
           ),
 
           //rest of the app
-          SliverToBoxAdapter(
-            child: Container(
-              margin: EdgeInsets.all(20.0),
-              height: 900,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: Colors.orange[200],
-              ),
-            ),
-          ),
+          // SliverToBoxAdapter(
+          //   child: Container(
+          //     margin: EdgeInsets.all(20.0),
+          //     height: 900,
+          //     decoration: BoxDecoration(
+          //       borderRadius: BorderRadius.circular(15),
+          //       color: Colors.orange[200],
+          //     ),
+          //   ),
+          // ),
         ],
       ),
       bottomNavigationBar: CustomBottomNav(),
