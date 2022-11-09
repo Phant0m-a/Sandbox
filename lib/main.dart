@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_final_fields
 
 import 'package:flutter/material.dart';
+import 'package:sandbox/pages/news/newsUI.dart';
 import 'package:sandbox/pages/widgets/time_picker_custom.dart';
 
 import 'pages/favourites/favourite.dart';
@@ -48,7 +49,8 @@ class MyApp extends StatelessWidget {
               selectedIconTheme: IconThemeData(color: Colors.orange)),
           useMaterial3: true,
           appBarTheme: AppBarTheme(backgroundColor: Colors.orange[200])),
-      home: MyStatefulWidget(),
+      // home: MyStatefulWidget(),
+      home: NewsUi(),
     );
   }
 }
@@ -64,8 +66,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-
-
 
   static List<Widget> _widgetOptions = <Widget>[
     // Text(
@@ -86,7 +86,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       'Favourite',
       style: optionStyle,
     ),
-   TimePickerCustom()
+    TimePickerCustom()
   ];
 
   void _onItemTapped(int index) {
@@ -192,6 +192,4 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       ),
     );
   }
-  
-  
 }
